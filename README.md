@@ -6,7 +6,7 @@ GitHub ne gérant pas les couleurs en markdown, elle ne sont pas affichées ici.
 ## Sommaire
 
 1. [2021-2022](2021-2022.md)
-    0. [Rappels](2021-2022.md#chapter_0)
+    1. [Rappels](2021-2022.md#chapter_0)
         1. [Vた＋ものだ](2021-2022.md#chapter_0_1)
         2. [Vdico / Vない / いadjい / なadjな ＋ものだ　(普通）](2021-2022.md#chapter_0_2)
         3. [Vdico / Vない / いadjい / なadjな ＋ものだ　（べき）](2021-2022.md#chapter_0_3)
