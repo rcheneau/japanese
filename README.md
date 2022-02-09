@@ -37,3 +37,6 @@ GitHub ne gérant pas les couleurs en markdown, elle ne sont pas affichées ici.
         3. [V(さ)せていただけたい：Vcausatif＋ていただけたい](2021-2022.md#chapter_4_3)
            4. [「なさる」の命令形(forme impérative）](2021-2022.md#chapter_4_4)
         5. [V普通形＋の？](2021-2022.md#chapter_4_5)
+        6. [Vてくる・Vていく](2021-2022.md#chapter_4_6)
+           7. [がする](2021-2022.md#chapter_4_7)
+        8. [Aな / N + である＝です](2021-2022.md#chapter_4_8)
