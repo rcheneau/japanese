@@ -35,3 +35,4 @@ GitHub ne gérant pas les couleurs en markdown, elle ne sont pas affichées ici.
         1. [文脈指示：あれ/あの/それ/その (会話）](2021-2022.md#chapter_4_1)
         2. [Nのところ](2021-2022.md#chapter_4_2)
         3. [V(さ)せていただけたい：Vcausatif＋ていただけたい](2021-2022.md#chapter_4_3)
+        4. [「なさる」の命令形(forme impérative）](2021-2022.md#chapter_4_4)
