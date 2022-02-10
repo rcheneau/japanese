@@ -23,6 +23,8 @@ GitHub ne gérant pas les couleurs en markdown, elle ne sont pas affichées ici.
         4. [ ～というのは・・・っていうことだ](2021-2022.md#chapter_1_4)
         5. [外来語：外国がら入って来た言葉](2021-2022.md#chapter_1_5)
     2. [L2](2021-2022.md#chapter_2)
+    	1. [ほど](2021-2022.md#chapter_2_1)
+    	2. [V<s>ます</s>＋そうだ](2021-2022.md#chapter_2_2)
     3. [L3](2021-2022.md#chapter_3)
         1. [縮約形 (contraction)](2021-2022.md#chapter_3_1)
         2. [Vて＋ほしい / Vないで＋ほしい](2021-2022.md#chapter_3_2)
