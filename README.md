@@ -1,54 +1,41 @@
 # 日本語
 
-Notes écrites avec [remarkable](https://github.com/jonschlinkert/remarkable).
-GitHub ne gérant pas les couleurs en markdown, elle ne sont pas affichées ici.
+Notes des cours de Japonais en markdown. 
 
-## Sommaire
+[Cliquer ici pour accéder aux notes](https://rcheneau.github.io/japanese/).  
 
-1. [2021-2022](2021-2022.md)
-    1. [Rappels](2021-2022.md#chapter_0)
-        1. [Vた＋ものだ](2021-2022.md#chapter_0_1)
-        2. [Vdico / Vない / いadjい / なadjな ＋ものだ　(普通）](2021-2022.md#chapter_0_2)
-        3. [Vdico / Vない / いadjい / なadjな ＋ものだ　（べき）](2021-2022.md#chapter_0_3)
-        4. [普通形 / なadjな / Nの ＋ため（に）　この / その ＋ため（に）](2021-2022.md#chapter_0_4)
-        5. [Vdico/Nの＋ため（に）](2021-2022.md#chapter_0_5)
-        6. [によって](2021-2022.md#chapter_0_6)
-        7. [受身](2021-2022.md#chapter_0_7)
-        8. [使役](2021-2022.md#chapter_0_8)
-        9. [使役受身](2021-2022.md#chapter_0_9)
-    1. [L1](2021-2022.md#chapter_1)
-        1. [合成語：～口](2021-2022.md#chapter_1_1)
-        2. [～って / ～て](2021-2022.md#chapter_1_2)
-        3. [Vはいい](2021-2022.md#chapter_1_3)
-        4. [ ～というのは・・・っていうことだ](2021-2022.md#chapter_1_4)
-        5. [外来語：外国がら入って来た言葉](2021-2022.md#chapter_1_5)
-    2. [L2](2021-2022.md#chapter_2)
-    	1. [ほど](2021-2022.md#chapter_2_1)
-    	2. [V<s>ます</s>＋そうだ](2021-2022.md#chapter_2_2)
-    	3. [普通形 / なadj<s>な</s> / N<s>だ</s>＋でしょうか](2021-2022.md#chapter_2_3)
-    	4. [あいにく](2021-2022.md#chapter_2_4)
-    	5. [～と伝えていただきたい](2021-2022.md#chapter_2_5)
-    	6. [～ということですね](2021-2022.md#chapter_2_6)
-    	7. [Nだけでなく、Nも　/　Vdicoだけでなく、Vdicoのも](2021-2022.md#chapter_2_7)
-    	8. [もし＋普通形 / なadj<s>な</s> ＋ なら](2021-2022.md#chapter_2_8)
-    3. [L3](2021-2022.md#chapter_3)
-        1. [縮約形 (contraction)](2021-2022.md#chapter_3_1)
-        2. [Vて＋ほしい / Vないで＋ほしい](2021-2022.md#chapter_3_2)
-        3. [助詞にの使い方](2021-2022.md#chapter_3_3)
-        4. [助詞の変化：が->の](2021-2022.md#chapter_3_4)
-        5. [～ことになる / ～ことにする](2021-2022.md#chapter_3_5)
-        6. [省略 Omission](2021-2022.md#chapter_3_6)
-        7. [普通形(V/い ajd) / な adj な / Nを + ものですから: 「～から/ので」](2021-2022.md#chapter_3_7)
-        8. [Vて＋いただけないでしょうか](2021-2022.md#chapter_3_8)
-        9. [ただ＋Vdico＋だけでいい](2021-2022.md#chapter_3_9)
-        10. [助詞＋は : Emphase](2021-2022.md#chapter_3_10)
-        11. [連用中止](2021-2022.md#chapter_3_11)
-    4. [L4](2021-2022.md#chapter_4)
-        1. [文脈指示：あれ/あの/それ/その (会話）](2021-2022.md#chapter_4_1)
-        2. [Nのところ](2021-2022.md#chapter_4_2)
-        3. [V(さ)せていただけたい：Vcausatif＋ていただけたい](2021-2022.md#chapter_4_3)
-        4. [「なさる」の命令形(forme impérative）](2021-2022.md#chapter_4_4)
-        5. [V普通形＋の？](2021-2022.md#chapter_4_5)
-        6. [Vてくる・Vていく](2021-2022.md#chapter_4_6)
-        7. [がする](2021-2022.md#chapter_4_7)
-        8. [Aな / N + である＝です](2021-2022.md#chapter_4_8)
+Accessoirement il également possible de les consulter directement avec le [prévisualisateur de github ici](index.md).   
+Cependant les notes ne seront pas colorisées, GitHub ne le permettant pas.
+
+## Contribution
+
+### Prérequis
+
+[Pandoc](https://pandoc.org/) est utilisé pour générer le HTML à partir du markdown.  
+Pour l'installer sous Ubuntu :
+```
+sudo apt install pandoc
+```
+
+### Installation
+
+Avant toute chose, exécuter le script d'initialisation.  
+Cela va créer un lien symbolique afin de copier le contenu de `.githooks` dans `.git/hooks`.
+```
+sh ./setup.sh
+```
+Cette opération sera à reproduire à chaque ajout / modification du répertoire `.githooks`.  
+Pour le moment contient un seul hook en pre-commit afin de construire le HTML à partir du markdown.
+
+Ainsi avant chaque commit, un hook va générer le HTML des fichiers .md (à l'exception du `README.md`) dans le répertoire `web` utilisé comme répertoire source pour les pages GitHub.
+
+### Rédaction
+
+Plusieurs outils existe pour la rédaction de markdown, une liste non exhaustive :
+- [Remarkable](https://github.com/jamiemcg/Remarkable) éditeur pour linux ;
+- [Visual Studio Code](https://code.visualstudio.com/) IDE cross-plateform ;
+- [Dillinger](https://dillinger.io/) éditeur en ligne ;
+- Ou tout simplement directement via l'éditeur de GitHub.
+
+Le rendu proposé ne sera pas le même en fonction de l'éditeur choisi et du CSS / thème.  
+Il est donc important de s'assurer que le rendu final GitHub et HTML soit cohérent.

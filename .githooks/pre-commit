@@ -3,6 +3,6 @@
 #  .git/hooks/pre-commit
 #
 
-pandoc -f markdown -t html 2021-2022.md -o web/2021-2022.html --self-contained --css=web/pandoc.css --metadata pagetitle="2021-2022"
+find ./ -iname "*.md" ! -name 'README.md' -type f -exec sh -c 'pandoc -f markdown -t html --self-contained --css=pandoc.css "${0}" -o "web/${0%.md}.html" --metadata pagetitle="${0%.md}"' {} \;
 
 git add web/*
