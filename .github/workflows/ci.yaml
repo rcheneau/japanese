@@ -11,10 +11,10 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Build
-          run: find ./ -iname "*.md" ! -name 'README.md' -type f -exec sh -c 'pandoc -f markdown -t html --self-contained --css=pandoc.css "${0}" -o "web/${0%.md}.html" --metadata pagetitle="${0%.md}"' {} \;
+          run: mkdir build & find ./ -iname "*.md" ! -name 'README.md' -type f -exec sh -c 'pandoc -f markdown -t html --self-contained --css=pandoc.css "${0}" -o "build/${0%.md}.html" --metadata pagetitle="${0%.md}"' {} \;
 
         - name: Deploy
           uses: JamesIves/github-pages-deploy-action@v4.2.3
           with:
             branch: gh-pages
-            folder: web
+            folder: build
