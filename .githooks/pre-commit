@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-#  .git/hooks/pre-commit
-#
-
-find ./ -iname "*.md" ! -name 'README.md' -type f -exec sh -c 'pandoc -f markdown -t html --self-contained --css=pandoc.css "${0}" -o "web/${0%.md}.html" --metadata pagetitle="${0%.md}"' {} \;
-
-git add web/*
