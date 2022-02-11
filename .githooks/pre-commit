@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+#  .git/hooks/pre-commit
+#
+
+pandoc -f markdown -t html 2021-2022.md -o web/2021-2022.html --self-contained --css=web/pandoc.css --metadata pagetitle="2021-2022"
+
+git add web/*
