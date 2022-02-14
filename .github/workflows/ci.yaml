@@ -11,7 +11,7 @@ jobs:
           uses: actions/checkout@v2
 
         - name: Build
-          run: mkdir build & find ./notes -iname "*.md" -type f -exec sh -c 'pandoc -f markdown -t html --self-contained --css=pandoc.css "${0}" -o "build/$(basename ${0%.md}).html" --metadata pagetitle="$(basename ${0%.md})"' {} \;
+          run: mkdir build & find ./notes -iname "*.md" -type f -exec sh -c 'pandoc -f markdown -t html --self-contained -H ./head.html --css=./assets/pandoc.css "${0}" -o "build/$(basename ${0%.md}).html" --metadata pagetitle="$(basename ${0%.md})"' {} \;
 
         - name: Update index links
           run: sed -ri "s/(href=\".)*(.md)/\.html\1/g" build/index.html
