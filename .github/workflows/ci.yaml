@@ -14,7 +14,7 @@ jobs:
           run: |
             mkdir build
             find ./notes -iname "*.md" -type f -exec sh -c \
-              'pandoc -f markdown -t html --self-contained -H ./head.html --toc --css=./assets/pandoc.css "${0}" -o "build/$(basename ${0%.md}).html" --metadata pagetitle="$(basename ${0%.md})" -V "title:$(basename ${0%.md})"' {} \;
+              'pandoc -f markdown -t html --self-contained -H ./head.html --toc --toc-depth=2 --css=./assets/pandoc.css "${0}" -o "build/$(basename ${0%.md}).html" --metadata pagetitle="$(basename ${0%.md})" -V "title:$(basename ${0%.md})"' {} \;
 
         - name: Update index links
           run: sed -ri "s/(href=\".)*(.md)/\.html\1/g" build/index.html
