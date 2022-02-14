@@ -4,8 +4,8 @@ Notes de mes cours de Japonais en markdown.
 
 [Cliquer ici pour accéder aux notes](https://rcheneau.github.io/japanese/).  
 
-Accessoirement il est également possible de les consulter directement avec le [prévisualisateur de github ici](notes/index.md).   
-Cependant les notes ne seront pas colorisées, GitHub ne le permettant pas.
+Accessoirement il est également possible consulter les notes directement avec le [prévisualisateur de github ici](notes/index.md).   
+Elles sont cependant moins complètes, comme l'absence de la table des matières ou encore l'absence de colorisation du texte (impossible sur GitHub).
 
 ## Rédaction
 
